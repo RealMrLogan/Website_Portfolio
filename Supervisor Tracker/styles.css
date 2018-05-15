@@ -1,0 +1,347 @@
+html, body {
+  font-family: tahoma;
+  margin: 0;
+  padding: 0;
+}
+
+#bodyImg {
+  background-image: url("https://cdn.glitch.com/2cbff751-8c54-4410-bbdd-340f00a177d6%2Fskyline.jpg?1522096364224");
+  height: 100%;
+}
+
+#empImg {
+  background-image: url("https://cdn.glitch.com/2cbff751-8c54-4410-bbdd-340f00a177d6%2FEmp1.jpg?1522175994397");
+}
+
+#KBImg {
+  background-image: url("https://cdn.glitch.com/2cbff751-8c54-4410-bbdd-340f00a177d6%2Farticle.jpg?1522175994335");
+}
+
+#projectImg {
+  background-image: url("https://cdn.glitch.com/2cbff751-8c54-4410-bbdd-340f00a177d6%2Fproject.jpg?1522175994436");
+  width: 34%;
+}
+
+.parallax {
+   /* Set a specific height */
+  height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bottomSection {
+  margin-bottom: 5%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.thirdWidth {
+  margin-top: 4%;
+  width:  33%; 
+  text-align: center;
+}
+
+.almostFullWidth {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footerDivLeft {
+  text-align: left;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footerDivRight {
+  text-align: right;
+  padding-right: 4%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: inline-block;
+  
+  width: 101.5%; /* make the shadow stretch from edge to edge and position the buttons appropriatly */
+  margin-left: -3%;
+  padding-right: 2.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  
+  text-align: right;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, .9);
+  box-shadow: 0 8px 6px -6px #999;
+}
+
+td {
+  text-align: center;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+input[type=text] {
+  padding: 5px 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+form#projectForm {
+  text-align: left;
+  padding: 0 5% 0 5%;
+}
+
+form#projectForm input {
+  width: 100%;
+}
+
+#projectName {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: georgia;
+  font-size: 25px;
+}
+
+.header {
+  color: black;
+  font-size: 3em;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.largeButton {
+  padding: 15px 32px;
+  font-size: 16px;
+}
+
+.smallButton {
+  padding: 10px 25px;
+  font-size: 12px;
+}
+
+.tinyButton {
+  padding: 2px 8px;
+  font-size: 10px;
+}
+
+.greenButton {
+  background-color: #0a430a; /* Green */
+  border: 2px solid #0a430a;
+}
+
+.greenButton:hover {
+  background-color: white;
+  color: #0a430a;
+  border: 2px solid #0a430a;
+}
+
+.blueButton {
+  background-color: #1f42ad; 
+  border: 2px solid #1f42ad;
+}
+
+.blueButton:hover {
+  background-color: white;
+  color: #1f42ad;
+  border: 2px solid #1f42ad;
+}
+
+.redButton {
+  background-color: #df2020; 
+  border: 2px solid #df2020;
+}
+
+.redButton:hover {
+  background-color: white;
+  color: #df2020;
+  border: 2px solid #df2020;
+}
+
+.purpleButton {
+  background-color: #4d004d;
+  border: 2px solid #4d004d;
+}
+
+.purpleButton:hover {
+  background-color: white;
+  color: #4d004d;
+  border: 2px solid #4d004d;
+}
+
+.orangeButton {
+  background-color: #c2540a;
+  border: 2px solid #c2540a;
+}
+
+.orangeButton:hover {
+  background-color: white;
+  color: #c2540a;
+  border: 2px solid #c2540a;
+}
+
+#projectTable {
+  margin-bottom: 5%;
+}
+
+Table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #737373;
+  color: white;
+  border: 1px solid black;
+}
+
+table td {
+  padding-left: 5px;
+  text-align: left;
+  color: black;
+  border: 1px solid black;
+  table-layout: fixed;
+}
+
+#clickWhenDone {
+  cursor: pointer;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.twentyPercentCol {
+  width: 20%;
+}
+
+.seventyPercentCol {
+  width: 70%;
+}
+
+.fiftyFivePrecentCol {
+  width: 55%;
+}
+
+.fifteenPercentCol {
+  width: 15%;
+}
+
+footer {
+  display: inline-block;
+  
+  width: 101.5%; /* make the shadow stretch from edge to edge and position the buttons appropriatly */
+  margin-left: -3%;
+  padding-left: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  
+  text-align: left;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, .9);
+  box-shadow: 0 -8px 6px -6px #999;
+}
+
+.ghost {
+  display: none;
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1700px) {
+  .iconButton {
+  padding: 8px 20px;
+  font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1300px) {
+  /* comes into effect for screens less than or equal to 1300 pixels */
+  .iconButton {
+  padding: 5px 10px;
+  font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: inherit;
+    width: auto;
+  }
+
+  .ghost {
+    display: initial;
+  }
+  
+  .thirdWidth {
+    width: 100%;
+  }
+
+  #projectImg {
+    width: 100%;
+  }
+  
+  .iconButton {
+    padding: 8px 20px;
+    font-size: 15px;
+    width: 90%;
+  }
+  
+  #bottomSection {
+    margin-bottom: 20%;
+  }
+  
+  .footerDivLeft, .footerDivRight {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    bottom: 75px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+  }
+}

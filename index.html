@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Supervisor Tracker</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="https://cdn.glitch.com/2cbff751-8c54-4410-bbdd-340f00a177d6%2Fif_insert-image_28484.ico?1522179512615" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body onunload="closingCode()" onload="openingCode()">
+    
+    <section class="container">
+      <header>
+        <button type="button" class="button largeButton purpleButton" onclick="logInfo()">Log Information</button>
+        <!--<submit type="button" class="button smallButton redButton" id="submitButton" action="https://script.google.com/macros/d/1Q2i_ELnQQ7W2WeJJn02Wy9T0zKdx-ITV_bwM7nySmk78F18l2gNHk60M/edit?uiv=2&mid=ACjPJvEokRk0HKnuWkong60cOCQmCN9IDCpENcsTZ-F9mgXoOSbiryG8ovT0oIxb4VhfLGq0d8hONHZeJwPhg8cHKCzMavMuEy4OW6AhxoL9riGSWQtqoK5PrEKWw3JLBp71khwj3yOqzOI&splash=yes">Submit</submit>
+      --></header>
+    </section>
+    
+    <section id="main">
+      <section class="container">
+        <div class="thirdWidth parallax" id="empImg">
+          <h1 class="header">Employees</h1>
+          <button type="button" class="button largeButton greenButton" onclick="addEmployee()">I Helped an Employee</button>
+          <p id="showEmp">I haven't helped any employees.</p>
+          <button type="button" class="button smallButton greenButton" onclick="subEmployee()">Oops, No I Didn't</button>
+        </div>
+
+        <div class="thirdWidth parallax" id="KBImg">
+          <h1 class="header">Articles</h1>
+          <button type="button" class="button largeButton blueButton" onclick="addKB()">I Read an Article</button>
+          <p id="showKB">I haven't read any articles.</p>
+          <button type="button" class="button smallButton blueButton" onclick="subKB()">Oops, No I Didn't</button>
+        </div>
+
+        <div class="thirdWidth parallax" id="projectImg">
+          <h1 class="header">Projects</h1>
+          <form id="projectForm">
+            Name: <input type="text" name="proName" value="" id="projectName"><br>
+            Description: <input type="text" name="proDes" value="" id="projectDes">
+          </form>
+          <button type="button" class="button smallButton orangeButton" onclick="validateForm()">Add Project</button>
+        </div>
+      </section>
+      
+      <section style="background-color: black">
+        <br>
+      </section>
+
+      <section class="parallax" id="bodyImg"> <!-- section for both tables -->
+        <section class="container">
+          <div class="almostFullWidth">
+            <h1>My Projects</h1>
+            <table id="projectTable">
+              <thead>
+                <tr>
+                  <th class="twentyPercentCol">Name</th>
+                  <th class="seventyPercentCol">Description</th>
+                  <th class="tenPercentCol">Is It Done?</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </section>
+
+        <section class="container">
+          <div class="almostFullWidth" id="bottomSection">
+            <h1>Activity Log</h1>
+            <table id="infoTable">
+              <thead>
+                <tr>
+                  <th class="fiftyFivePercentCol">Date</th>
+                  <th class="fifteenPercentCol">Employees Helped</th>
+                  <th class="fifteenPercentCol">Articles Read</th>
+                  <th class="fifteenPercentCol">Projects Completed</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </section>
+      </section>
+    </section> <!-- end of main content -->
+    
+    <footer>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="ghost">&#9776;</span>
+      <section class="container iconBar sidenav" id="mySidenav">
+        <div class="footerDivLeft">
+          <a href="javascript:void(0)" class="closebtn ghost" onclick="closeNav()">&#10150;</a>
+          <button type="button" class="button largeButton purpleButton iconButton" onclick="clearInfo()">Clear Activity Log</button>
+          <button type="button" class="button largeButton greenButton iconButton" onclick="clearEmp()">Clear Employees Helped</button>
+          <button type="button" class="button largeButton blueButton iconButton" onclick="clearKB()">Clear Articles Read</button>
+          <button type="button" class="button largeButton orangeButton iconButton" onclick="clearProjectList()">Clear My Projects</button>
+        </div>
+        
+        <div class="footerDivRight">
+          <button type="button" class="button largeButton redButton iconButton" onclick="clearEverything()">Clear Everything</button>
+          <!--<submit type="button" class="button smallButton redButton" id="submitButton" action="https://script.google.com/macros/d/1Q2i_ELnQQ7W2WeJJn02Wy9T0zKdx-ITV_bwM7nySmk78F18l2gNHk60M/edit?uiv=2&mid=ACjPJvEokRk0HKnuWkong60cOCQmCN9IDCpENcsTZ-F9mgXoOSbiryG8ovT0oIxb4VhfLGq0d8hONHZeJwPhg8cHKCzMavMuEy4OW6AhxoL9riGSWQtqoK5PrEKWw3JLBp71khwj3yOqzOI&splash=yes">Submit</submit>
+        -->
+        </div>
+      </section>
+    </footer>
+    
+  </body>
+</html>

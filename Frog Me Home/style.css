@@ -1,0 +1,57 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+#div {
+  width: 100%;
+  text-align: center;
+}
+
+canvas {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 2px solid black;
+  width: 35%;
+}
+
+#endMessage {
+  display: none;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  width: 99%;
+}
+
+#finish {
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  color: yellow;
+}
+
+#gameOver {
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  color: red;
+}
+
+#greeting {
+
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.message {
+  font-size: 30px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+img {
+  position: relative;
+  top: 3%;
+  left: 0;
+  width: 100px;
+  height: auto;
+  filter: blur(.5px);
+}
